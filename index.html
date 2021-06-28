@@ -3,186 +3,95 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/common.css">
     <!-- TODO: Include Google Fonts file here -->
-    <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-
-
-    <!-- Bootstrap for modals-->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/index.css">
+    
 </head>
-
 <body>
+    <header>
+        <a  class="logo-title">ScriBBler</a>
+        <span class="ashu">
+            <button id="myBtn">Sign Up</button>
+              <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                 <form>
+                  <h1>Get Started</h1>
+                  <hr>
+                  <label for="fname">Full Name:</label><br>
+                  <input class="k" type="text" id="fname" name="fname" placeholder="Enter Full Name" required><br><br>
+
+                  <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
+
+                  <label for="password">Password:</label><br>
+                  <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+
+                  <label for="password1">Confirm Password:</label><br>
+                  <input class="k" type="password" id="password1" name="password1" placeholder="Confirm Password"  required><br><br>
+                  
+                  <input type="submit" class="value" value="Sign Up">
+                 </form> 
+              </div>
+              </div>
+
+              <button id="myBtn1">Sign In</button>
+              <div id="myModal1" class="modal1">
+                <div class="modal-content1">
+                  <span class="close">&times;</span>
+                  <form>
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username">Username:</label><br>
+                  <input type="text" class="k" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
+  
+                    <label for="password">Password:</label><br>
+                    <input class="k" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+  
+                    <input type="submit" class="value" value="Sign In">
+                    <center><p style="display: inline;">Not a member ?<button id="myBtn13">Sign Up</button></p></center>
+                  </form>
+                   
+                </div>
+              </div>
+
+              
+              <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                  <span class="close">&times;</span>
+                    <form>
+                    <p>Pen Your Post</p>
+
+                     <label for="title">Title:</label><br>
+                     <input type="text" class="k" id="Username" name="title"   required><br><br>
+  
+                     <label for="textarea">Content:</label><br>
+                     <textarea id="w3review" class="k" id="textarea" name="w3review" rows="20" cols="130"></textarea><br>
+                    <input type="submit" class="value2" value="Submit">
+                  </form>
+                </div>
+              </div>
+
+            </span>
+            <p class="middleText">Explore, Imagine, Create</p>
+          </header>
+            <div class="vertical-center">
+              <button class="q"><a href="html/bloglist.html">All Posts</a></button>
+              &ensp;
+              <button class="q" id="myBtn2"> Create Posts</button>
+            </div>
+    
     <!-- TODO: Include all your code for the header and home page here -->
-    <div class="header">
-        <div class="bg-signin">
-            <button type="button" class="signinupbutton" data-toggle="modal" data-target="#exampleModal"
-                id="sign-in-button">
-                Sign In
-            </button>
-
-            <button type="button" class="signinupbutton" data-toggle="modal" data-target="#exampleModalSignUp"
-                id="sign-up-button">
-                Sign Up
-            </button>
-        </div>
-
-        <a id="pageTitle" class="logo-title">ScriBBler</a>
-        <p class="sub-heading">Explore, Imagine, Create</p>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel"
-                            style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Welcome Back !</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputUsername">Username</label>
-                                <input type="text" class="form-control" id="exampleInputUsername"
-                                    aria-describedby="usernameHelp" placeholder="Enter your username"
-                                    style="background-color :#DCDCDC ;" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter your password" style="background-color :#DCDCDC ;" required>
-                            </div>
-                            <div class="modal-signin-container">
-                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
-                            </div>
-                            <div class="modal-footer border-top-0 d-flex justify-content-center">
-                                Not a member ? <a data-target="#exampleModalSignUp" data-dismiss="modal"
-                                    data-toggle="modal" href="#signup-form"> Sign Up</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel"
-                            style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">Get Started</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
-                                    style="background-color : 	#DCDCDC ;" required>
-
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputUsername1">Username</label>
-                                <input type="text" class="form-control" id="exampleInputUsername1"
-                                    aria-describedby="emailHelp" placeholder="Enter your username"
-                                    style="background-color :#DCDCDC ;" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Enter your password" style="background-color :#DCDCDC ;" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Confirm Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword2"
-                                    placeholder="Re-enter your Password" style="background-color :#DCDCDC ;" required>
-                            </div>
-
-                            <div class="modal-signin-container">
-                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="posts">
-        <div class="bg-post">
-            <button type="button" class="postbutton" onclick="window.location.href = './html/postslist.html';">
-                All Posts
-            </button>
-            <button type="button" class="postbutton" data-toggle="modal" data-target="#createPost"
-                id="create-post-button">
-                Create Post
-            </button>
-        </div>
-
-        <div class="post-buttons">
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="createPost">
-                <div class="modal-dialog  modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"
-                                style="color:grey;font-family: 'Roboto', sans-serif;font-size: larger;">
-                                Pen
-                                Your Post</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <form>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="title">Title</label>
-                                    <input type="text" class="form-control" id="title"
-                                        placeholder="Enter title of your post" style="background-color : 	#DCDCDC ;"
-                                        required>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="content">Contents</label>
-                                    <textarea rows="10" cols="50" class="form-control" id="content"
-                                        placeholder="Enter the contents of your post"
-                                        style="background-color :	#DCDCDC;" required></textarea>
-                                </div>
-                            </div>
-                            <div class="modal-footer border-top-0 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-success" style="width: 100px;">Create</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
-
+<script src="js/index.js"></script>
 </html>
